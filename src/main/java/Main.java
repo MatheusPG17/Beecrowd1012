@@ -6,22 +6,26 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
+        //variaveis
         String linha;
         String[] lista;
         double A, B, C, tri, cir, tra, qua, ret;
         
+        //entrada de dados
         linha = leia.nextLine();
         lista = linha.split(" ");
         A = Double.parseDouble(lista[0]);
         B = Double.parseDouble(lista[1]);
         C = Double.parseDouble(lista[2]);
         
+        //processamento
         tri = (A * C) / 2;
         cir = 3.14159 * Math.pow(C, 2);
         tra = ((A + B) * C) / 2;
         qua = Math.pow(B,2);
         ret = A * B;
         
+        //saida de dados
         System.out.printf("TRIANGULO: %.3f\n", tri);
         System.out.printf("CIRCULO: %.3f\n", cir);
         System.out.printf("TRAPEZIO: %.3f\n", tra);
